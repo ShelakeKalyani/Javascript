@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample Demo</title>
+	<style type="text/css">
+		.box{
+			height: 100px;
+			width: 100px;
+			float: left;
+			background-color: red;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		for(i=0;i<10;i++)
+		{
+			document.write(`<div class="box" onclick="changecolor(this)"></div>`);
+		   
+		}
+
+		function changecolor(elmt)
+		{
+			elmt.style.backgroundColor = 'blue';    //onclick blue color
+
+		}
+	</script>
+
+</body>
+</html>

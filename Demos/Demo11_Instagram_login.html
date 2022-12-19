@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Instagram Login</title>
+	<style type="text/css">
+		.main_box{
+			height: 550px;
+			width: 25%;
+			border: 1px solid black;
+			margin-left: 460px;
+			margin-top: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="show_error">
+		<input type="" name="">
+	</div>
+
+	<div class="main_box">
+		<h1>Instagram</h1>
+		<p>Sign up to see photos and videos from your friends.</p>
+		<p>--------------OR----------------</p>
+
+		<form>
+				<input type="text" name="" placeholder="Enter Number or Email" onkeyup="checkName()" id="uname" style="outline:none;padding-right: 30px;">
+				<span id="error"></span>
+			
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function checkName()
+		{
+			//VALIDATION FOR STUDENT NAME
+
+			var spattern = /^[a-zA-Z]{2,30}$/;         //copy from google(Meaning at below of code)
+
+			var sn = document.getElementById('uname').value;
+
+			if(sn.match(spattern))
+			{
+				document.getElementById('uname').style.border="2px solid green";
+				return true;
+			}
+			else
+			{
+				// document.getElementById('uname').style.border="2px solid red";
+				var symbol = document.getElementById('show_error');
+				var op = document.getElementById('error');
+				op.innerHTML = "Wrong";
+				op.style.marginLeft="-40px";
+				return false;
+			}
+		}
+	</script>
+
+</body>
+</html>

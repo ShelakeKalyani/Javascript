@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<input type="text" name="" id="inp1">
+	<button onclick="add_text()">Add</button><br><br>
+	<textarea cols="80" rows="20" id="text_All"></textarea>
+
+	<script type="text/javascript">
+		function add_text()
+		{
+			var val = document.getElementById('inp1').value;
+			var add = document.getElementById('text_All');
+			// add.innerHTML = add.innerHTML+" "+val;   //It also work
+			add.value = add.value+" "+val;
+		}
+	</script>
+
+</body>
+</html>

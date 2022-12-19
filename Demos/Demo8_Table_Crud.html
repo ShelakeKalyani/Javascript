@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo-1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<center><h1>Demo-1</h1></center>
+
+	<form action="save.html" onsubmit="return confirm('Are you sure..!!')">
+		<input type="text" name="" placeholder="Enter Name" id="inp1">
+		<input type="text" name="" placeholder="Enter Mobile" id="inp2">
+		<input type="text" name="" placeholder="Enter Email" id="inp3">
+		<input type="date" name="" id="inp4">
+		<center  id="inp5" style="display: none;"><button onclick="fun_del()" type="submit" >Del</button></center>
+		 <input type="button" name="" id="inp5" value="Del">
+		<br><br>
+	</form>
+
+	<center><button onclick="fun(inp1.value,inp2.value,inp3.value,inp4.value,inp5.innerHTML)">Submit</button></center><br><br>
+
+	<table width="100%" border="1" cellspacing="0">
+		<tr>
+			<th>Name</th>
+			<th>Mobile</th>
+			<th>Email</th>
+			<th>DOB</th>
+			<th>Action</th>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		var a;
+		let i= 1;
+		var a = new Array();
+
+		function fun(nme,mo,mail,dob,but)
+		{
+		 a[i] = $("table").append("<tr><th>"+nme+"</th><th>"+mo+"</th><th>"+mail+"</th><th>"+dob+"</th><th>"+but+"</th></tr>");
+
+		 i++;
+		 
+		}
+
+		function fun_del()
+		{
+
+		}
+
+
+	</script>
+
+</body>
+</html>
+
+
+
+ -->
+
+
+
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title></title>
+ </head>
+ <body>
+
+ 	<center><input type="text" name="" placeholder="Name" id="username" style="">
+ 	<input type="text" name="" placeholder="Mobile" id="usermobile">
+ 	<input type="text" name="" placeholder="Mail" id="usermail">
+ 	<input type="date" name="" id="userDOB"></center><br><br>
+ 	<center><button onclick="addRow()">Submit</button></center><br><br>
+
+ 	<table id="tbl1" width="100%" border="1" cellspacing="0px">
+ 		<tr bgcolor="lightgray">
+ 			<th>Action</th>
+ 			<th>Name</th>
+ 			<th>Mobile</th>
+ 			<th>Mail</th>
+ 			<th>DOB</th>
+ 		</tr>
+ 	</table>
+
+ 	<script type="text/javascript">
+ 		function addRow()
+ 		{
+ 			var name = document.getElementById('username').value;
+ 			var mobile = document.getElementById('usermobile').value;
+ 			var email = document.getElementById('usermail').value;
+ 			var dob = document.getElementById('userDOB').value;
+ 			var out = `<tr>
+				 			<td>
+				 				<button onclick="delRow(this)">Del</button>
+				 			</td>
+				 			<td>`+name+`</td>
+				 			<td>`+mobile+`</td>
+				 			<td>${email}</td>
+				 			<td>${dob}</td>
+				 		</tr>`
+			var t1 = document.getElementById('tbl1');
+			t1.innerHTML = t1.innerHTML+out;
+ 		}
+
+ 		function delRow(elmt)
+ 		{
+ 			elmt.closest('tr').remove();
+ 		}
+ 	</script>
+ 
+ </body>
+ </html>

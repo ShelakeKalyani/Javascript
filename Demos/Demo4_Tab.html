@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.box{
+			height: 570px;
+			width: 20%;
+			border: 2px solid black;
+			float: left;
+			background-color: lightyellow;
+		}
+		.btn_des{
+			height: 5%;
+			width: 80%;
+			margin: 15px;
+			border: 1px solid black;
+			background-color: gray;
+			text-align: center;
+			color: white;
+			font-size: 25px;
+			font-weight: bold;
+			/*padding-top: 7px;*/
+			padding: 5px;
+			border-radius: 4px;
+		}
+		.Tabs{
+			height: 570px;
+			width: 70%;
+			border: 2px solid black;
+			float: left;
+			margin-left: 20px;
+			display: none;
+		}
+		#tabs_Display{
+			text-align: center;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		<div class="btn_des" onclick="display1('1','violet')" id="change1()">TAB 1</div>
+		<div class="btn_des" onclick="display1('2','red')" id="change1()">TAB 2</div>
+		<div class="btn_des" onclick="display1('3','cyan')" id="change1()">TAB 3</div>
+		<div class="btn_des" onclick="display1('4','lime')" id="change1()">TAB 4</div>
+		<div class="btn_des" onclick="display1('5','pink')" id="change1()">TAB 5</div>
+		<div class="btn_des" onclick="display1('6','blue')" id="change1()">TAB 6</div>
+		<div class="btn_des" onclick="display1('7','lightblue')" id="change1()">TAB 7</div>
+		<div class="btn_des" onclick="display1('8','hotpink')" id="change1()">TAB 8</div>
+		<div class="btn_des" onclick="display1('9','lightgray')" id="change1()">TAB 9</div>
+		<div class="btn_des" onclick="display1('10','orange')" id="change1()">TAB 10</div>
+	</div>
+
+	<div class="Tabs" id="tabs_Display"></div>
+
+	<script type="text/javascript">
+		function display1(inp,color_back)
+		{
+			var box_dis = document.getElementById('tabs_Display');
+			box_dis.style.display="inline";
+
+
+			for(var i=1;i<=10;i++)
+			{
+				if(inp==i)
+				{
+					box_dis.innerHTML = "<h1>This is TAB "+inp+"</h1>";
+					box_dis.style.backgroundColor=color_back;
+				}
+			}		
+		}
+	</script>
+
+</body>
+</html>
