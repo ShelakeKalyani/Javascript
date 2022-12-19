@@ -1,0 +1,42 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Check the ratio of height and width and find the person is 
+					   healthy or not.
+	Date 		    = 14-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BMI</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var wt = prompt("Enter weight = ");			//50
+		var ht = prompt("Enter height = ");			//1.52
+		
+		var sq = ht*ht;
+		var BMI = wt/sq;
+
+		if(BMI>0 && BMI<18.5)
+		{
+			document.write("Oops..!!It is a serious issue.");
+		}
+		else if(BMI>=18.5 && BMI<=25)
+		{
+			document.write("You are perfect person.");
+		}
+		else if(BMI>25)
+		{
+			document.write("You lie in overweight category.");
+		}
+		else
+		{
+			document.write("INVALID..");
+		}
+	</script>
+</body>
+</html>

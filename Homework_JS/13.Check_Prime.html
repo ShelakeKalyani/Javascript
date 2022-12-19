@@ -1,0 +1,40 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Check number is prime number or not.
+	Date 		    = 12-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Prime</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var num = 7;
+		var flag = 0;
+
+		for(var i=2;i<=(num/2);i++)
+		{
+			if(num%i==0)
+			{
+				flag = 1;
+				break;
+			}
+		}
+
+		if(flag==0)
+		{
+			document.write(num+" is prime number.");
+		}
+		else
+		{
+			document.write(num+" is not prime number.");
+		}
+	</script>
+
+</body>
+</html>

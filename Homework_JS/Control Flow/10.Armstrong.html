@@ -1,0 +1,61 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = JavaScript Program to Check Armstrong Number.
+	Date 		    = 21-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Armstrong Number</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var num = prompt("Enter any number = ");    //371
+		var temp = num;
+		var temp1 = num;
+		var cnt = 0;
+		var digit = 0;
+		var sum = 0;
+
+		 while(num!=0)
+		 {
+		 	cnt++;						//digit count
+		 	num = parseInt(num/10);
+		 }
+
+		// document.write(cnt);
+
+		while(temp!=0)	
+		{
+			digit = temp%10;     //3 2 
+			var pow = 1;
+
+			for(i=1;i<=cnt;i++)
+			{
+				pow = pow*digit;		//3 9 27
+			}
+
+			sum = sum + pow;
+
+			temp = parseInt(temp/10);      //32 3
+		}
+
+		document.write(sum);
+
+		if(temp1==sum)
+		{
+			document.write("<h2>"+temp1+" is Armstrong number.");
+		}
+		else
+		{
+			document.write("<h2>"+temp1+" is not Armstrong number.");
+		}
+	</script>
+
+</body>
+</html>

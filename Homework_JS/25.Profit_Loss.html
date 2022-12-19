@@ -1,0 +1,35 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Javascript program to calculate profit and loss.
+	Date 		    = 14-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profit-Loss</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var Selling_Price = prompt("Enter Selling price = ");
+		var Cost_Price = prompt("Enter Cost price = ");
+
+		var profit = Selling_Price - Cost_Price;
+		var Loss = Cost_Price - Selling_Price;
+
+		if(Selling_Price>Cost_Price)
+		{
+			document.write("Profit = "+profit);
+		}
+		else
+		{
+			document.write("<br>Loss = "+Loss);
+		}
+	</script>
+
+</body>
+</html>

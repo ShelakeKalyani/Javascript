@@ -1,0 +1,48 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Program which assign a grades based on percentage:
+					 	above 90  ---- Grade A
+					 	above 80  ---- Grade B
+					 	above 65  ---- Grade C
+					 	above 45  ---- Grade D
+					 	else 	  ---- fail
+
+	Date 		    = 08-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grade</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var per = 97;
+
+		if(per>=90)
+		{
+			document.write("Congratulation...!!You get Grade A.");
+		}
+		else if(per>80 && per<=65)
+		{
+			document.write("You get Grade B.");
+		}
+		else if(per>65 && per<=45)
+		{
+			document.write("You get Grade C.");
+		}
+		else if(per>45 && per<=35) 
+		{
+			document.write("You get Grade D.");
+		}
+		else
+		{
+			document.write("Oops..!!You are fail.");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Write a JavaScript function that reverse a number. 
+						Example x = 32243;
+						Expected Output : 34223
+						Click me to see the solution.
+	Date 		    = 14-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverse Number</title>
+</head>
+<body>
+
+	<button onclick="reverse(1234)">Click me</button>
+
+	<script type="text/javascript">
+		var digit;
+		var rev = 0;
+
+		//Parameterized Function
+		
+		function reverse(number)
+		{
+			while(number!=0)
+			{
+				digit = number%10;
+				rev = (rev*10)+digit;
+				number = parseInt(number/10);
+			}
+			document.write("Reverse number = "+rev);
+		}
+
+	</script>
+
+</body>
+</html>
+
+
+

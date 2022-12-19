@@ -1,0 +1,27 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = JavaScript Program to Convert Kilometers to Miles
+	Date 		    = 21-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Km to Mile</title>
+</head>
+<body>
+
+	<h2 id="Mile"></h2>
+	<script type="text/javascript">
+		var km = prompt("Enter Distance in km = ");
+
+		var mile = km*0.62137119;         //1km = 0.62137119 mile
+
+		document.getElementById('Mile').innerHTML = km+" km = "+mile+" mile"
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Calculate electricity bill for given unit.
+	Date 		    = 14-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electricity Bill</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var unit = prompt("Enter unit = ");
+		var Bill = 0;
+
+		if(unit<=100 && unit>0)
+		{
+			Bill = unit*10;
+		}
+		else if(unit>100 && unit<=200)
+		{
+			Bill = (100*10) + (unit-100)*15;
+		}
+		else if(unit>200 &&unit<=300)
+		{
+			Bill = (100*10)+(100*15)+(unit-200)*20;
+		}
+		else if(unit>300)
+		{
+			Bill = (100*10)+(100*15)+(100*20)+(unit-300)*25;
+		}
+		else if(unit<=0)
+		{
+			document.write("Invalid units..");
+		}
+
+
+		document.write("Electricity Bill = "+Bill);
+	</script>
+
+</body>
+</html>

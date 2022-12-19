@@ -1,0 +1,35 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Check whether the triangle is equilateral , scalene, or 					   isosceles.
+	Date 		    = 11-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Triangle</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var a = 3;
+		var b = 3;
+		var c = 3;
+
+		if(a==b && a==c && b==c)
+		{
+			document.write("Triangle is equilateral triangle.");
+		}
+		else if((a==b) || (a==c) || (b==c))
+		{
+			document.write("Triangle is isosceles triangle.");
+		}
+		else
+		{
+			document.write("Triangle is scalene triangle.");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = JavaScript Program to Print the Fibonacci Sequence.
+	Date 		    = 21-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci Series</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+		var num = 7;
+		var a = 0;
+		var b = 1;
+		var c = 0;
+		var count = 0;
+
+		document.write("Fibonacci series = ");
+
+		while(count < num) //0<7  1<7 2<7 3<7
+		{
+		    document.write("<br>"+a); //0 1 1 2
+		    c = a +  b;   //1 2 3
+		    a = b;		  //1 1 2
+		    b = c;		  //1 2 3
+		    count +=1;	  //1 2 3
+		}
+	</script>
+
+</body>
+</html>

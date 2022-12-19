@@ -1,0 +1,39 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Javascript Program to Check if a Number is Odd or Even.
+	Date 		    = 21-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Even Odd</title>
+</head>
+<body>
+	<h2 id="Check"></h2>
+
+	<script type="text/javascript">
+		var num = prompt("Enter any number = ");
+
+		if(num>=0 || num<0)
+		{
+			if(num%2==0)
+			{
+				document.getElementById('Check').innerHTML = num+" is Even Number.";
+			}
+			else
+			{
+				document.getElementById('Check').innerHTML = num+" is Odd Number.";
+			}
+		}
+		else
+		{
+			document.write("<h2>Invaid number..Please enter valid number.");
+		}
+	</script>
+
+</body>
+</html>

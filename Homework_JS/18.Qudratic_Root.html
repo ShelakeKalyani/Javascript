@@ -1,0 +1,33 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = Find all roots of quadratic equations
+	Date 		    = 14-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Qudratic Root</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var a = 10;
+		var b = 26;
+		var c = 2;
+
+		var sqr = Math.sqrt((b*b)-(4*a*c));
+		var denom = 2*a;
+
+		var root1 = (-b+sqr)/denom;
+		var root2 = (-b-sqr)/denom;
+
+		document.write("Value of root 1 = "+root1);
+		document.write("<br>Value of root 2 = "+root2);
+	</script>
+
+</body>
+</html>

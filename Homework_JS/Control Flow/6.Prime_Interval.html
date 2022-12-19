@@ -1,0 +1,42 @@
+<!--
+	Developer Name  = Shelake Kalyani
+	Program Name    = JavaScript Program to Print All Prime Numbers in an Interval
+	Date 		    = 21-11-2022
+	Technology Used = HTML , JAVASCRIPT
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Prime</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var start = prompt("Enter starting of interval = ");
+		var end = prompt("Enter ending of interval = ");
+		
+		document.write("<h2>Prime numbers between "+start+" and "+end+" is = ");
+
+		for(var j=start;j<end;j++)
+		{
+			var flag = 0;
+			for(var i=2;i<=(j/2);i++)
+			{
+				if(j%i==0)
+				{
+					flag = 1;
+					break;
+				}
+			}
+
+			if(flag==0)
+			{
+				document.write("  "+j);
+			}
+		}
+
+	</script>
+
+</body>
+</html>
