@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- ****************************Onsubmit (SUbmit button vr click kelyavr effect)**************************** -->
+
+	<form action="save.html" onsubmit="return confirm('Are you sure..!!')">
+
+<!-- ****************************Effect in Different Function(No need to pass att)**************************** -->
+<!-- <form>
+		<input type="text"name = ""onfocus = "focus1()"
+		onblur = "blur1()"placeholder="Name"id="name"><br><br>
+
+		<input type="text"name = ""onfocus = "focus2()"
+		onblur = "blur2()"placeholder="Email"id="email"><br><br>
+
+
+		<input type="text"name = ""onfocus = "focus3()"
+		onblur = "blur3()"placeholder="Mobile"id="mobile"><br><br>
+	</form><br><br> -->
+
+
+
+<!-- ****************************Effect in same Function(Pass id as a att)**************************** -->
+		<!-- <input type="text"name = ""onfocus = "focus1('name')" onblur = "blur1('name')" onselect="Select1('name')" placeholder="Name"id="name"><br><br>
+
+		<input type="text"name = ""onfocus = "focus1('email')"onblur = "blur1('email')" onselect="Select1('email')" placeholder="Email"id="email"><br><br>
+
+
+		<input type="text"name = ""onfocus = "focus1('mobile')"onblur = "blur1('mobile')" onselect="Select1('mobile')" placeholder="Mobile"id="mobile"><br><br> -->
+
+
+
+<!-- ****************************Onchange(Only apply on select)**************************** -->
+
+ <select onchange="change1()" id="sel">
+	<option>Choose</option>
+	<option>Data1</option>
+	<option>Data2</option>
+	<option>Data3</option>
+</select>
+
+<button>Submit</button>
+ 
+
+
+	</form><br><br>
+	<script type="text/javascript">
+
+
+
+
+//****************************Effect in Different Function(no need to pass att)****************************
+
+		// function focus1()
+		// {
+		// 	document.getElementById('name').style.background="yellow";
+		// }
+
+		// function focus2()
+		// {
+		// 	document.getElementById('email').style.background="yellow";
+		// }
+
+		// function focus3()
+		// {
+		// 	document.getElementById('mobile').style.background="yellow";
+		// }
+
+		// function blur1()
+		// {
+		// 	document.getElementById('name').style.background="green";
+		// }
+
+		// function blur2()
+		// {
+		// 	document.getElementById('email').style.background="green";
+		// }
+
+		// function blur3()
+		// {
+		// 	document.getElementById('mobile').style.background="green";
+		// }
+
+
+
+
+//****************************Effect in same Function(Pass id as a att)****************************
+
+		// function focus1(att)
+		// {
+		// 	document.getElementById(att).style.background="yellow";
+		// }
+
+		// function blur1(att)
+		// {
+		// 	document.getElementById(att).style.background="green";
+		// }
+
+		// function Select1(att)
+		// {
+		// 	document.getElementById(att).style.background="cyan";
+		// }
+
+
+
+// ****************************Effect in same Function(Pass id as a att)****************************
+
+        // function change1()
+        // {
+        // 	document.getElementById('sel').style.background="pink";
+        // }
+
+
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>

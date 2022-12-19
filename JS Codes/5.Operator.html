@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operator</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var a = 10;
+		var b = 10;
+
+
+		// Arithmetic Opeartor
+
+
+
+		document.write("**********Arithmetic Operator**********");
+		document.write("<br>");
+
+		var c = a + b;					// 10 + 10 = 20
+
+		document.write(c);		// 20
+		document.write("<br>");			
+		var a = c - b;					// 20 - 10 = 10
+		document.write(a);		// 10
+		document.write("<br>");
+		var a = a*b;					// 10 * 10 = 100
+		document.write(a);		// 100
+		document.write("<br>");
+		var a = a / b;					// 100 / 10 = 10
+		document.write(a);		// 10
+		document.write("<br>");
+		var b = a % b;					// 10 % 10 = 0
+		document.write(b);		//0
+		document.write("<br>");
+		var cc = a + b;					// 10 + 0 = 10
+		document.write(cc);
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+
+		//Assignment Operator
+
+		var a = 20;
+		var b = 10;
+		var c = 0;
+
+		//document.write(typeof c);
+		document.write("Assignment Operator");
+		document.write("<br>");
+
+		document.write("<br");
+
+		c += a;									// 0 + 20 = 20
+		document.write("c = "+c);	// 20
+		document.write("<br>");
+
+
+		// c += a;									// 20 + 20 = 40
+		// document.write("c = "+c);	// 40
+		// document.write("<br>");
+
+		// var prod = 0;
+		// prod += 10;								// 0 + 10 = 10
+		// document.write("prod = "+prod);
+		// document.write("<br>");
+		// prod += 20;
+		// document.write("prod = "+prod);
+		// document.write("<br>");
+		// prod += 5;
+		// document.write("prod = "+prod);
+		// document.write("<br>");
+
+		c -= b;									//20 - 10 = 10
+		document.write("c = "+c);		//10
+		document.write("<br>");
+		c *= a;									// 10 * 20 = 200
+		document.write("c = "+c);		//200
+		document.write("<br>");
+		c /= b;									// 200 / 10 = 20 
+		document.write("c = "+c);		//20
+		document.write("<br>");
+		c %= a;									// 20 % 20 = 0
+		document.write("c = "+c);		//0
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+		//Increament Operator
+		var a = 20;
+
+		a++;		// 21
+		++a;		// 22
+		a++; 		// 23
+
+		document.write("**********Increment Operator**********");
+		document.write("<br>");
+		document.write("a = "+a);		//23
+		document.write("<br>");
+		document.write("a ="+(a++));	// 23	24
+		document.write("<br>");
+		document.write("a ="+(++a));	// 25
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+		//Decerement Operator
+		var a = 20;
+
+		a--;		//19
+		--a;		//18
+
+		document.write("**********Decerement Operator**********");
+		document.write("<br>");
+		document.write("a = "+a);		// 18
+		document.write("<br>");
+		document.write("a = "+(a--));	// 18	17
+		document.write("<br>");
+		document.write("a = "+(--a));	// 16
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+
+
+
+
+		//Comparison Operator
+
+		var a = 20;
+		var b = "20";
+
+		document.write("**********Comparison Operator**********");
+		document.write("<br>");
+		document.write("Result By == is : "+(a==b));
+		document.write("<br>");
+		document.write("Result By === is : "+(a===b));
+		document.write("<br>");
+
+		var a = 21;
+		document.write("Is a > b = :  "+(a>b));
+		document.write("<br>");
+		document.write("Is a < b = :  "+(a<b));
+		document.write("<br>");
+
+		document.write("Is 20>=20 : "+(20>=20));
+		document.write("<br>");
+		document.write("Is 19>=20 : "+(19>=20));
+		document.write("<br>");
+		document.write("Is 21>=20 : "+(21>=20));
+		document.write("<br>");
+
+		document.write("Is 20<=20 : "+(20<=20));
+		document.write("<br>");
+		document.write("Is 19<=20 : "+(19<=20));
+		document.write("<br>");
+		document.write("Is 21<=20 : "+(21<=20));
+		document.write("<br>");
+
+		document.write("Is 20!=20 : "+(20!=20));
+		document.write("<br>");
+		document.write("Is 19!=20 : "+(19!=20));
+		document.write("<br>");	
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+
+
+		document.write("**********Logical Operator**********");
+		document.write("<br>");
+		var a = 10;
+		var b = 20;
+		var c = 30;
+
+		document.write(a<b && b<c);
+		document.write("<br>");
+		document.write(a<b && b>c);
+		document.write("<br>");
+		document.write(a<b && b<c && a<c);
+		document.write("<br>");
+		document.write("<br>");
+
+
+		document.write(a<b || b<c);
+		document.write("<br>");
+		document.write(a<b || b>c);
+		document.write("<br>");
+		document.write(a<b || b<c || a<c);
+		document.write("<br>");
+		document.write("<br>");
+
+
+		document.write("Is !(20==20) : "+!(20==20));
+		document.write("<br>");
+		document.write("Is !(20==20) : "+!(19==20));
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+
+
+		document.write("**********Concatination Operator**********");
+		document.write("<br>");
+		var fname = "Kalyani";
+		var lname = "Shelake";
+
+		document.write("My first name is "+fname+" & last name is "+lname);
+		document.write("<br>"+fname);
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+
+
+		document.write("**********Ternary Operator**********");
+		document.write("<br>");
+		var a = (10<=10) ? "Correct" : "Wrong";
+		document.write(a);
+		document.write("<br>");
+		var a = (10<=1) ? "Correct" : "Wrong";
+		document.write(a);
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+
+
+		// 	0101  --> 1010
+		// 	0001
+		// -----------
+		//  0100
+
+
+
+		document.write("**********Bitwise Operator**********");
+		document.write("<br>");
+		var a = 5 & 1;				// 0101  & 0001 ---> 0001
+		document.write(a);
+		var b = 5 | 1;				// 0101 | 0001  ---> 0101
+		document.write("<br>");
+		document.write(b);	
+		// var b = ~(5);
+		//  document.write("<br>");
+		// document.write(b);
+		 var b = 5<<1;				// 0101<<1 ---> 1010
+		 document.write("<br>");
+		 document.write(b);
+		 var b = 5^1;				//  0101^0001 --->  0100
+		 document.write("<br>");
+		 document.write(b);
+		var b = 5>>1;				// 0101>>1  --->  0010 
+		document.write("<br>");
+		document.write(b);
+		var b = 5>>>1;
+		document.write("<br>");
+		document.write(b);
+
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	</script>
+
+</body>
+</html>
+

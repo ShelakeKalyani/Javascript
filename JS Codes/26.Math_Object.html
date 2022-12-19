@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Math Object</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		console.log(Math);
+		document.write("<b>***********PI,max,min,pow***********</b>")
+		document.write("<br>PI value = "+Math.PI);
+		document.write("<br>Max value = "+Math.max(10,10000,30,5,400));
+		document.write("<br>Min value = "+Math.min(10,10000,30,5,400));
+		document.write("<br>Power = "+Math.pow(2,6));
+
+
+		document.write("<br>Round value = "+Math.round(10.50));
+		document.write("<br>Round value = "+Math.round(10.80));
+		// 0 - 0.5 ------ same value return
+		// 0.5     ------ Increament value by 1
+		// 0.5 - 0.9 ---- Increament value by 1
+
+		document.write("<br>By ceil = "+Math.ceil(10.10));
+		document.write("<br>By ceil = "+Math.ceil(-20.90));
+		//ceil ----- original value peksha value 1 ne increse dakhvato
+
+		document.write("<br>By floor = "+Math.floor(10.10));
+		document.write("<br>By floor = "+Math.floor(-10.10));
+		//ceil ----- original value peksha value 1 ne decrease dakhvato
+
+		document.write("<br>By trunc = "+Math.trunc(10.10));
+		document.write("<br>By trunc = "+Math.trunc(-10.10));
+		//ceil ----- original value as it is print, point nantarcha part neglet
+
+		document.write("<br>By sqrt = "+Math.sqrt(16));
+
+		document.write("<br>By cbrt(Cube Root) = "+Math.cbrt(125));
+
+		document.write("<br>Random Generate = "+Math.trunc(Math.random()*10000));
+		//start from 0
+
+
+	</script>
+
+</body>
+</html>

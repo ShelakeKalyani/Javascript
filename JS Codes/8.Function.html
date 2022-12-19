@@ -1,0 +1,134 @@
+<!-- Developer Name  = Shelake Kalyani
+Program Name    = Function call and function definition.
+Technology used = HTMl,Javascript
+Date			= 14-11-2022 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Function</title>
+</head>
+<body>
+
+	<h1>Normal Function</h1>
+	<button type="button" onclick="fun()">Fun</button>
+	<button type="button" onclick="gun()">Gun</button>
+
+	<!-- Parameterized Function -->
+	<h1>Parameterized Function</h1>
+	<button onclick="add(10,20)">Add</button>
+	<button type="button" onclick="Nme('Kalyani','Shelake')">Name</button>
+
+	<script type="text/javascript">
+
+
+//*********************************Normal Function*********************************
+
+		function fun()
+		{
+			alert("Hello");
+		}
+		function gun()
+		{
+			alert("Welcome");
+		}
+
+		// fun();
+		// gun();
+
+
+
+
+//*********************************Parameterized Function*********************************
+
+		function Nme(fname,lname)
+		{
+			alert("Welcome "+fname+" "+lname);
+		}
+		// name('Kalyani','Shelake');
+
+		function add(a,b) {
+			alert("addition = "+(a+b));
+		}
+
+
+
+
+//*********************************Function Argumrnts*********************************
+		document.write("<h1>Function print by arguments</h1>");
+		function by_args(a,b,c)
+		{
+			// document.write(a+" "+b+" "+c);
+			document.write(arguments[0]+" "+arguments[1]+" "+arguments[2]);
+		}
+		by_args("A","B","C");
+
+
+
+
+//*********************************By Return Keyword*********************************
+		document.write("<h1>Function By Return Keyword</h1>");
+		function my_name(fname,lname)
+		{
+			var full_name = fname+" "+lname;
+			return full_name;
+		}
+
+		var result = my_name('Kalyani','Shelake');
+		document.write("Welcome "+result);
+
+
+
+
+//*********************************Function In Expression*********************************
+		document.write("<h1>Function In Expression</h1>");
+		var expr = function expr_fun(n)
+		{
+			var res = "Welcome "+n;
+			return res;
+		}
+
+		document.write(expr('ABC'));
+
+
+
+
+//*********************************Anonymous Function*********************************
+		document.write("<h1>Anonymous Function</h1>");
+
+		var anon = function(a,b)
+		{
+			var add = Number(a)+Number(b);
+			return add;
+		}
+
+		var res = anon(10,40);
+		document.write("Addition = "+res);
+
+
+
+
+
+//*********************************Arrow Function*********************************
+		document.write("<h1>Arrow Function</h1>");
+
+		var fun_arr=(n)=>{
+			document.write("Welcome "+n);
+		}
+		fun_arr("JS");
+
+
+
+		// var fun_arr=()=>{
+		// 	document.write("Welcome ");
+		// }
+		// fun_arr();
+
+
+	</script>
+
+</body>
+</html>

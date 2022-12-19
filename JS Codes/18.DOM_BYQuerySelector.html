@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Query Selector</title>
+</head>
+<body>
+
+	<p id="data1" class="data">Welcome</p>
+	<p class="data">HTML</p>
+	<p>CSS</p>
+	<p class="data">JS</p>
+
+	<script type="text/javascript">
+		var a = document.querySelector('p');
+		console.log(a);
+
+		var b = document.querySelectorAll('p');
+		console.log(b);
+
+		//for id
+		var c = document.querySelector('#data1').innerHTML;
+		console.log(c);
+
+
+		//for class
+		var d = document.querySelector('.data').innerHTML;
+		console.log(d);
+	</script>
+
+
+</body>
+</html>

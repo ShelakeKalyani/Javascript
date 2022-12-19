@@ -1,0 +1,38 @@
+<!-- 25-11-2022 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SetTimeOut & ClearTimeOut</title>
+</head>
+<body>
+
+	<img src="../CSS/Lotus.jpg" style="height:300px;width: 300px;">
+	<button onclick="start1()">Start</button>
+	<button onclick="stop1()">Stop</button>
+
+	<script type="text/javascript">
+		
+		var id = "";
+
+		function start1()
+		{
+			    id = setTimeout(demo,5000);        //5 sec nantar demo() la call(only one time)
+		}
+
+
+		function stop1()
+		{
+			clearTimeout(id);						//timer madhech band kart
+		}
+
+		function demo()
+		{
+			document.getElementsByTagName('img')[0].style = "border-radius:50%;height:300px;width:300px;";
+		}
+	</script>
+
+</body>
+</html>

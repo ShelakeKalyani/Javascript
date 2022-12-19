@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 id="demo"></h1>
+	<script type="text/javascript">
+
+// ******************Way*******************
+
+
+
+// ******************OUTPUT POSSIBILITIES*******************
+
+		document.write("<h1>OUTPUT POSSIBILITIES</h1>");
+
+		var str = "Welcome A2Z Family";
+
+		//Alert
+		alert(str);
+
+		//Document.write
+		document.write("Welcome A2Z Family")
+
+		//Console.log
+		console.log("Welcome A2Z Family");
+
+		//dome way
+		var ab = "Welcome A2Z Family";
+		document.getElementById('demo').innerHTML = ab;
+
+
+
+
+// ***********************************VARIABLE*******************************
+	
+	document.write("<h1>VARIABLE</h1>");
+	var a = 2;
+	var b = 4;
+	var c = 5;
+	var d = 8;
+	var e = 9;
+
+	var add = a+b+c+d+e;
+
+	document.write("<br>Sum = "+add);
+
+
+
+// ******************************VARIABLE KEYWORD****************************
+
+	document.write("<h1>VARIABLE KEYWORD</h1>");
+
+	var a = "This is public data.";			//Public Data
+
+	function fun()
+	{
+		document.write("<br><br><br>"+a);		
+	}
+
+	fun();
+
+
+
+	function gun()
+	{
+		let b = "This is local data";
+		document.write("<br>"+b);		
+	}
+
+	gun();
+
+	 const val = 76;				//conastant data
+
+	 document.write("<br>"+val+" is const data.");
+
+
+// ******************************DATA TYPE****************************
+	document.write("<h1>DATA TYPE</h1>");
+	var num = 23;
+	var str = "Hello";
+	var bol = true;
+	var nu = null;
+	var un;
+
+	document.write("<br><br>");
+	document.write("Type of num = "+typeof(num));
+	document.write("<br>Type of Hello = "+typeof(str));
+	document.write("<br>Type of bol = "+typeof(bol));
+	document.write("<br>Type of nu = "+typeof(nu));
+	document.write("<br>Type of un = "+typeof(un));
+
+
+// ********************Assignment + Arithmetic Operator********************
+		document.write("<h1>Operator</h1>");
+
+		var num1 = 234;
+		var num2 = 461;
+		var num3 = 123;
+
+		document.write("<br><br><br>");
+		document.write("<br>Addition = "+(num1+num2+num3));
+		document.write("<br>Subtraction = "+(num1-num2-num3));
+		document.write("<br>Multiplication = "+(num1*num2*num3));
+		document.write("<br>Division = "+(num1/num2));
+		document.write("<br>Modulo = "+(num1%num2));
+
+		document.write("<br><br><br>")
+
+		var val2 = num1;
+		document.write("<br>value of val = "+val2);
+		document.write("<br>By += = "+(num1+=1));
+		document.write("<br>By -= = "+(num1-=1));
+		document.write("<br>By *= = "+(num1*=1));
+		document.write("<br>By /= = "+(num1/=1));
+		document.write("<br>By %= = "+(num1%=1));
+
+
+		document.write("<br><br><br>");
+		var inc = 23;
+
+		document.write("Postfix ++ : "+(inc++));
+		document.write("<br>Prefix ++ : "+(++inc));
+
+		document.write("<br><br><br>");
+		var sname1 = "Shelake";
+		var sname2 = "Shelake";
+
+		if(sname1==sname2)
+		{
+			document.write("<br>equal");
+		}
+		if(sname1!=sname2)
+		{
+			document.write("<br>not equal");
+		}
+
+		var age1 = 23;
+		var age2 = 24;
+
+		if(age1>=age2)
+		{
+			document.write("<br>age1 is greater than or equal to age2");
+		}
+
+		if(age1<=age2)
+		{
+			document.write("<br>age1 is less than or equal to age2");
+		}
+
+
+		document.write("<br><br><br>");
+
+		var time = 10;
+
+		if(time>8 && time<12)
+		{
+			document.write("<br>Good morning");
+		}
+
+		if(time>12 || time==11)
+		{
+			document.write("<br>Good Evening");
+		}
+
+		if(!(time==12))
+		{
+			document.write("<br>Good night");
+		}
+
+
+		document.write("<br><br><br>");
+
+		var value = 22;
+
+		var ans = (value>18) ? "Eligible" : "Not Eligible";
+		document.write(ans);
+
+		document.write("<br><br><br>");
+		var name1 = "Vrushali";
+		var name2 = "Harshada";
+		var name3 = "Rutuja";
+		var name4 = "Komal";
+		var name5 = "Ashwini";
+		var name6 = "Siya";
+		var name7 = "Riya";
+		var name8 = "Pooja";
+		var name9 = "sakshi";
+		var name10 = "Pranali";
+
+		document.write(name1+" "+name2+" "+name3+" "+name4+" "+name5+" "+name6+" "+name7+" "+name8+" "+name9+" "+name10);
+
+
+//*****************************CONTROL STATEMENT*******************
+			var mark1 = 56;
+			var mark2 = 66;
+			var mark3 = 86;
+			var mark4 = 86;
+			var mark5 = 96;
+			var mark6 = 96;
+
+			if(mark1>=35 && mark2>=35 && mark3>=35 && mark4>=35 && mark5>=35 && mark6>=35){
+				document.write("<br>Pass");
+			}
+
+			if(mark1<35 && mark2<35 && mark3<35 && mark4<35 && mark5<35 && mark6<35){
+				document.write("<br>Fail");
+			}
+
+
+			var sum = mark1+mark2+mark3+mark4+mark5+mark6;
+			var per = (sum/600)*100;
+
+			if(mark1>=35 && mark2>=35 && mark3>=35 && mark4>=35 && mark5>=35 && mark6>=35){
+				document.write("<br>Pass and percentage = "+per);
+			}
+
+			else{
+				document.write("<br>Fail and percentage = "+per);
+			}
+
+
+			if(per>=75)
+			{
+				document.write("<br>Distinction.");
+			}
+			else if(per>=60 && per<75)
+			{
+				document.write("First class");
+			}
+			else if(per>=35 && per<60)
+			{
+				document.write("Second cass");
+			}
+			else
+			{
+				document.write("Fail");
+			}
+
+
+			var day_num = 2;
+
+			document.write("<br>");
+
+			switch(day_num)
+			{
+				case 0:
+						document.write("Sunday");
+						break;
+				case 1:
+						document.write("Monday");
+						break;
+				case 2:
+						document.write("Tuesday");
+						break;
+				case 3:
+						document.write("Wednesday");
+						break;
+				case 4:
+						document.write("Thursday");
+						break;
+				case 5:
+						document.write("Friday");
+						break;
+				case 6:
+						document.write("Saturday");
+						break;
+				document:
+						document.write("Invalid");
+			}
+
+
+
+	</script>
+
+</body>
+</html>

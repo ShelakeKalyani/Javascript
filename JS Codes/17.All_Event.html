@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Event</title>
+
+	<style type="text/css">
+		.box{
+			height: 400px;
+			width: 400px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body style="height:1000px;width:2000px" onresize="win1()" onscroll="win2()">
+
+
+<!-- ***********************************MOUSE EVENT***************************** -->
+
+	<button type="button" onclick="fun1()">One</button><br><br>
+	<button type="button" ondblclick="fun2()">Double</button><br><br>
+	<button type="button" oncontextmenu="fun3()">Right</button><br><br>
+	<button type="button" id="but" onmouseover="fun4()" onmouseout="fun5()">Onmouseover</button><br><br>
+
+	<!-- <img src=""> -->
+
+
+
+<!-- ***********************************KEYBOARD EVENT*****************************  -->
+
+	<div class="box" id="des" onkeypress="fun6()"></div>
+
+
+
+ <!-- ***********************************Form EVENT*****************************  -->
+
+ <form>
+ 	<br><br>
+ 	<input type="text" name="" placeholder="Name"  onselect="Select1('nme')" onfocus="focus1('nme')"  onblur="blur1('nme')" id="nme"><br><br>
+ 	<input type="text" name="" placeholder="Email"  onselect="Select1('mail')" onfocus="focus1('mail')"  onblur="blur1('mail')" id="mail"><br><br>
+ 	<input type="text" name="" placeholder="Mobile"  onselect="Select1('phone')" onfocus="focus1('phone')"  onblur="blur1('phone')" id="phone"><br><br>
+
+ 	<select id="sel" onchange="Change1()" >
+ 		<option>Choose</option>
+ 		<option>info1</option>
+ 		<option>info2</option>
+ 		<option>info3</option>
+ 	</select>
+ </form>
+
+
+ <!-- ***********************************Window EVENT***************************** -->
+
+ 	<!-- IN BODY TAG -->
+	
+
+
+	<script type="text/javascript">
+
+
+
+// ***********************************MOUSE EVENT***************************** 
+
+		function fun1()
+		{
+			alert("One Click..");
+		}
+
+		function fun2()
+		{
+			alert("Double Click..");
+		}
+
+		function fun3()
+		{
+			alert("Right Click..");
+		}
+		function fun4()
+		{
+			document.getElementById('but').style.background="violet";
+		}
+		function fun5()
+		{
+			document.getElementById('but').style.background="red";
+		}
+
+
+// ***********************************KEYBOARD EVENT***************************** 
+
+		// function fun6()
+		// {
+		// 	document.getElementById('des').style.background="cyan";
+		// }
+		// function fun7()
+		// {
+		// 	document.getElementById('but').style.background="red";
+		// }
+		// function fun8()
+		// {
+		// 	document.getElementById('but').style.background="red";
+		// }
+
+
+
+// ***********************************Form EVENT***************************** 
+		function focus1(att)
+		{
+			document.getElementById(att).style.background = "pink";
+		}
+
+		function blur1(att)
+		{
+			document.getElementById(att).style.background = "yellow";
+		}
+
+		function Select1(att)
+		{
+			// document.getElementById(att).style.background = "green";
+			alert("Selected..");
+		}
+
+		function Change1()
+		{
+			document.getElementById('sel').style.background = "yellow";
+			// alert("Selected..");
+		}
+
+
+// ***********************************Window EVENT*****************************
+		
+		function win1()
+		{
+			alert("Resize..");
+		}
+		function win2()
+		{
+			alert("Scroll..");
+		}
+
+
+	</script>
+
+</body>
+</html>

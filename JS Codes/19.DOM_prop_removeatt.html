@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Remove Attribute</title>
+</head>
+<body>
+
+	<input type="text" class="inp" value="a2z" disabled><br><br>
+	<input type="text" class="inp" value="a2z@gmail.com" disabled><br><br>
+	<input type="text" class="inp" value="9877669324" disabled><br><br>
+	<button onclick="fun()">Edit</button>
+
+	<script type="text/javascript">
+		function fun()
+		{
+			document.getElementsByClassName('inp')[0].removeAttribute('disabled');
+			document.getElementsByClassName('inp')[1].removeAttribute('disabled');
+			document.getElementsByClassName('inp')[2].removeAttribute('disabled');
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo-6</title>
+</head>
+<body>
+	
+	<img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" width="50%" id="img1">
+
+	<input type="range" name="" onchange="setBrightness()" id="inp1" min="0" max="200">
+
+	<script type="text/javascript">
+		function setBrightness()
+		{
+			var i1 = document.getElementById('inp1').value;
+			var img = document.getElementById('img1');
+			img.style.filter = 'brightness('+i1+'%)';
+		}
+	</script>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_id{
+			height: 400px;
+			width: 400px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="range" min="11" step="0.5" value="11" max="15" onchange="change1()" id="inp">
+	<div id="div_id"></div>
+
+	<script type="text/javascript">
+		function change1()
+		{
+			var a = document.getElementById('inp').value;
+			var b = document.getElementById('div_id');
+			b.innerHTML = a;
+		}
+	</script>
+
+</body>
+</html>

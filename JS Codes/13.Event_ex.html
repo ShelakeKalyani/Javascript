@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Example</title>
+</head>
+<body>
+
+	<input type="number" name="" id="num1" placeholder="Num1"><br><br>
+	<input type="number" name="" id="num2" placeholder="Num2"><br><br>
+	<button onclick="add(num1.value,num2.value)">+</button>
+	<button onclick="sub(num1.value,num2.value)">-</button>
+	<button onclick="mul(num1.value,num2.value)">*</button><br><br>
+	<input type="number" name="" id="total" placeholder="total" readonly>
+
+
+	<script type="text/javascript">
+		function add(a,b){
+			var c = Number(a)+Number(b);
+			document.getElementById('total').value = c;
+		}
+
+		function sub(a,b){
+			var c = Number(a)-Number(b);
+			document.getElementById('total').value = c;
+		}
+
+		function mul(a,b){
+			var c = Number(a)*Number(b);
+			document.getElementById('total').value = c;
+		}
+	</script>
+
+</body>
+</html>

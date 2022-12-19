@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>By Tag</title>
+</head>
+<body>
+
+	<p>Welcome HTML</p>
+	<p>Welcome CSS</p>
+	<h1>Welcome JS</h1>
+	<h1>Welcome Ajax</h1>
+	<p>Welcome XML</p>
+
+
+	<script type="text/javascript">
+		//get
+		var a = document.getElementsByTagName('p');
+		// console.log(a);
+		// console.log(a[1]);
+		console.log(a[1].innerHTML);
+
+		//set
+		document.getElementsByTagName('h1')[1].innerHTML = "Hello...How are you?"
+	</script>
+
+</body>
+</html>

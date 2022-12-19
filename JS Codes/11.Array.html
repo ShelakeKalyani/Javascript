@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var data = ["Kalyani","kadh45@gmail.com",9856489281];
+		document.write("<br>"+data[0]);
+		document.write("<br>"+data[1]);
+		document.write("<br>"+data[2]);
+		console.log(data);
+
+		var data1 = ['one','two','three','four','five'];
+		document.write("<br><br><br>Length of data1 = "+data.length);	//find length of array
+
+		document.write("<br><h1>*********By for loop************</h1>");
+		for(var i=0;i<data1.length;i++)
+		{
+			document.write("<br>"+data1[i]);
+		}
+
+
+		document.write("<h1>*******Dynamic data print******</h1>");
+
+		document.write("<br>Example-1");
+		var arr = new Array();
+
+		for(var i=0;i<100;i++)
+		{
+			// document.write("<br>"+i);
+			arr[i] = i+1;
+		}
+		// console.log(arr);
+		document.write(arr);
+
+
+		document.write("<br><br><br>Example-2");
+		var sum = 0;
+		var add_arr = [1,2,3,4,5,6,7,8,9,10];
+
+		for(var i=0;i<add_arr.length;i++)
+		{
+			sum = sum + add_arr[i];
+		}
+		document.write("<br>Addition = "+sum);
+
+		document.write("<br><br><br>Example-3");
+
+		var even_arr = new Array();
+		var cnt = 0;
+		var sum_Even = 0;
+
+		for(var i=1;i<100;i++)
+		{
+			if(i%2==0)
+			{
+				sum_Even = sum_Even + i;
+				even_arr[cnt] = i;
+				cnt++;
+			}
+		}
+		document.write("<br>Even Array = ");
+		document.write("<br>"+even_arr);
+		document.write("<br>Sum = "+sum_Even);
+
+		document.write("<br><br><br>Example-4");
+
+		var odd_arr = new Array();
+		var cnt = 0;
+		var sum_Odd = 0;
+
+		for(var i=1;i<100;i++)
+		{
+			if(i%2!=0)
+			{
+				sum_Odd = sum_Odd + i;
+				odd_arr[cnt] = i;
+				cnt++;
+			}
+		}
+		document.write("<br>Odd Array = ");
+		document.write("<br>"+odd_arr);
+		document.write("<br>Sum = "+sum_Odd);
+
+
+		document.write("<br><br><br>Example-5");
+		var arr_rev = [10,20,30,40,50,60,70,80,90,100];
+
+		for(var i=arr_rev.length;i>=0;i--)
+		{
+			document.write("<br>"+arr_rev[i]);
+		}
+
+		document.write("<h1>**********Nested Array***********</h1>");
+		var arr1 = ['A2Z',"nagar",["HTML","CSS","JS"],325655,9045785467];
+		document.write(arr1);
+		console.log(arr1);
+		document.write("<br>"+arr1[2][1]);
+
+
+		document.write("<h1>**********Array Functions***********</h1>");
+		document.write("<br><h4>Reverse Array</h4>");
+		var arr_fun = new Array();
+		for(var i=0;i<25;i++)
+		{
+			arr_fun[i] = i+1;
+		}
+		document.write(arr_fun);
+
+//****************Reverse Array************************
+		var rev = arr_fun.reverse();
+		document.write("<br>Reverse Array = "+rev);
+
+
+//****************Shift Array************************
+		document.write("<br><h4>Shift Array</h4>");			//remove starting
+		arr_fun.shift()
+		document.write("Shift Array = "+arr_fun);
+
+
+//****************Unshift Array************************
+		document.write("<br><h4>Unhift Array</h4>");	    //add starting
+		arr_fun.unshift(100,200,300);
+		document.write("Unshift Array = "+arr_fun);
+
+
+//****************Pop Array************************
+		document.write("<br><h4>Pop Array</h4>");		    //remove last
+		arr_fun.pop()
+		document.write("Pop Array = "+arr_fun);
+
+
+//****************Reverse Array************************
+		document.write("<br><h4>Push Array</h4>");		    //add last
+		arr_fun.push(100,200,300);
+		document.write("Push Array = "+arr_fun);
+
+
+//****************Splice Array************************
+		document.write("<br><h4>Splice Array</h4>");		    
+		var splice_arr = arr_fun.splice(5,4);		//5th index pasun next 4 elements
+		document.write("Splice Array = "+splice_arr);
+
+
+//****************Slice Array************************
+		document.write("<br><h4>Slice Array</h4>");		    
+		var ab = arr_fun.slice();		//Copy
+		document.write("Slice Array = "+ab);
+
+
+//****************indexOf************************
+		document.write("<br><h4>Index of Array</h4>");	
+		var ac = arr_fun.indexOf(100,5);    
+
+		//first 5 value sodun dilya nanatar 100 kontya index la alay te print kel
+
+		document.write("<br>Inindexof = "+ac);
+
+
+//****************Join Array************************
+		document.write("<br><h4>Join Array</h4>");
+		var add = [100,200,300,24,23,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,100,200,300];
+		document.write("<br>"+add);
+		var a = add.join('|');
+		document.write("<br>"+a);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Get Attribute</title>
+
+	<style type="text/css">
+		.Box{
+			height: 300px;
+			width: 300px;
+			background-color: red;
+		}
+		.Box1{
+			height: 300px;
+			width: 300px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="data" class="Box Demo"></div>
+
+	<script type="text/javascript">
+
+
+
+		//By id
+		var a = document.getElementById('data').getAttribute('class');
+		console.log(a);
+
+
+		document.getElementById('data').setAttribute('class',"Box1");
+
+		var a = document.getElementById('data').getAttribute('class');
+		console.log(a);
+
+	</script>
+
+</body>
+</html>

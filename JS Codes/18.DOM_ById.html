@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+
+	<h1 id="data1"><b>Welcome</b></h1>
+	<h1 id="data2">JS</h1>
+	<button onclick="Byid()">Change</button>
+
+	<script type="text/javascript">
+		var a = document;			//whole document access
+		console.log(a);
+		var b = document.head;		//only head part access
+		console.log(b);
+		var c = document.body;		//only body part access
+		console.log(c);
+
+
+//*******************BYID*********************
+	
+	// var d = document.getElementById('data1').innerHTML;
+	// console.log(d);
+
+	function Byid()
+	{
+		//GET
+		var d1 = document.getElementById('data1').innerText;
+		var d2 = document.getElementById('data2').innerText;
+		console.log(d1);
+		console.log(d2);
+
+		//SET
+		document.getElementById('data1').innerText = d2;
+		document.getElementById('data2').innerText = d1;
+	}
+	
+
+	</script>
+
+</body>
+</html>

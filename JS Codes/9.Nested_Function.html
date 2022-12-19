@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nested Function</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		document.write("<h1>****************Nested Function****************</h1>");
+		function demo()
+		{
+			document.write("In Function");
+
+			function demo1()
+			{
+				document.write("<br>In nested Function.");
+
+				function demo3()
+				{
+					document.write("<br>Second nested.");
+				}
+				demo3();
+			}
+			demo1();
+		}
+		demo();
+
+  document.write("<h2>Example-1</h2>");
+
+  function cal(a,b)
+  {
+  	function add(m,n)
+  	{
+  		var res = arguments[0]+arguments[1];
+  		return res;
+  	}
+  	var ans = add(a,b);
+  	return ans;
+  }
+
+  var final = cal(10,20);
+  document.write("Addition = "+final);
+
+
+  document.write("<h2>Example-2</h2>");
+  
+	</script>
+
+</body>
+</html>

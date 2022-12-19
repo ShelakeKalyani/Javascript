@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Control Statements</title>
+</head>
+<body id="body">
+
+	<script type="text/javascript">
+		document.write("<h2>*********IF STATEMENT********</h2>");
+		document.write("<br>");
+
+		var ab = "js";
+
+		if(ab=="js")
+		{
+			document.write("Welcome in javascript");
+		}
+		document.write("<br>");
+		document.write("<br>");
+
+		document.write("Example-1");
+
+		var shop = 4000;
+		var dis = 0;
+
+		if((shop>=5000) && (shop<=10000))
+		{
+			dis = 10;
+		}
+
+		var dis11 = (shop*dis)/100;
+		var total = shop-dis11;
+
+		document.write("<br>Your Bill = "+shop);
+		document.write("<br>Total Discount ("+dis+"%) = "+dis11);
+		document.write("<br>Total Bill = "+total);
+
+		document.write("<br>");
+		document.write("<br>");
+
+		document.write("Example-2");
+		var gen = "female";
+
+		if(gen=="female")
+		{
+			document.write("<br>She");
+		}
+		if(gen=="male")
+		{
+			document.write("<br>He");
+		}
+
+		document.write("<br>");
+		document.write("<br>");
+
+		document.write("Example-3");
+		var age = 19;
+
+		if(age>=18)
+		{
+			document.write("<br>You are eligible for voting..");
+		}
+		if(age<18)
+		{
+			document.write("<br>You are not eligible for voting..");
+		}
+		document.write("<br>");
+		document.write("<br>");
+
+		document.write("Example-4");
+		var num = 68;
+
+		if(num%2==0)
+		{
+			document.write("<br>"+num+" is even number.");
+		}
+		if(num%2!=0)
+		{
+			document.write("<br>"+num+" is odd number.");
+		}
+
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<h2>********IF-ELSE STATEMENT******</h2>");
+		document.write("<br>");
+		document.write("Example-1");
+		document.write("<br>");
+
+		var str = "JS"
+		if(str=="JS")
+		{
+			document.write("Correct");
+		}
+		else
+		{
+			document.write("Wrong");
+		}
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("Example-2");
+		document.write("<br>");
+
+		var sub1 = 40;
+		var sub2 = 75;
+		var sub3 = 90;
+		var sub4 = 89;
+		var sub5 = 99;
+		var sub6 = 91;
+
+		if(sub1>=35 && sub2>=35 && sub3>=35 && sub4>=35 && sub5>=35 && sub6>=35)
+		{
+			document.write("Congratulation..!!You are Pass.");
+		}
+		else
+		{
+			document.write("You are fail..");
+		}
+
+		//even odd
+		//voting
+		//male female
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("Example-3");
+		document.write("<br>");
+		var num = 24;
+
+		if(num%2==0)
+		{
+			document.write(num+" is even number");
+		}
+		else
+		{
+			document.write(num+" is odd number");
+		}
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("Example-4");
+		document.write("<br>");
+
+		var age = 22;
+
+		if(age>=18)
+		{
+			document.write("You are eligible for voting");
+		}
+		else
+		{
+			document.write("You are not eligible for voting");
+		}
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("Example-5");
+		document.write("<br>");
+
+		var gen = "female";
+
+		if(gen=="female")
+		{
+			document.write("She");
+		}
+		else
+		{
+			document.write("He");
+		}
+
+		document.write("<br><br>");
+		document.write("Example-6");
+		document.write("<br>");
+
+		var shop = 7000;
+		var dis = 0;
+
+		if(shop>=5000)
+		{
+			dis = 10;
+			var dis11 = shop*dis/100;
+			var total = shop-dis11;
+			document.write("<br>Your shopping Bill = "+shop);
+			document.write("<br>Discount ("+dis+"%) = "+dis11);
+			document.write("<br>Total Bill with Discount = "+total);
+			
+		}
+		else
+		{
+			document.write("<br>Total Bill with Discount = "+shop);
+		}
+
+		// document.write("<br>Your shopping Bill = "+shop);
+		// document.write("<br>Discount ("+dis+"%) = "+dis);
+		// document.write("<br>Total Bill with Discount = "+total);
+
+		document.write("<br><br><br>");
+		document.write("<h2>********IF-ELSE-IF STATEMENT******</h2>");
+		document.write("<br>");
+		document.write("Example-1");
+		document.write("<br>");
+
+		var n1 = 40;
+		var n2 = 50;
+		var n3 = 30;
+
+		if(n1>=n2 && n1>=n3)
+		{
+			document.write(n1+" is Greater number.");
+		}
+		else if(n2>=n1 && n2>=n3)
+		{
+			document.write(n2+" is Greater number.");
+		}
+		else
+		{
+			document.write(n3+" is Greater number.");
+		}
+
+
+
+
+		//0-5000 ---> 0%
+		//5000-10000 = 10%
+		//10000-15000 = 20%
+		//15000-25000 = 25%
+		// > 25000 = 30%
+
+
+		document.write("<br><br>");
+		document.write("Example-2");
+		document.write("<br>");
+
+		var shop = 12000;
+		var dis = 0;
+		var dis11 = 0;
+		var total = 0;
+
+		if(shop>0 && shop<=5000)
+		{
+			dis = 0;
+		}
+		else if(shop>5000 && shop<=10000)
+		{
+			dis = 10;
+
+		}
+		else if(shop>10000 && shop<=15000)   
+		{									 
+			dis = 20;
+
+		}
+
+		else if(shop>15000 && shop<=25000)
+		{
+			dis = 25;
+		}
+		else 
+		{
+			dis = 30;	
+		}
+
+		dis11 = shop*dis/100;
+		total = shop-dis11;
+		document.write("<br>Your Shopping Bill = "+shop);
+		document.write("<br>Discount ("+dis+"%) = "+dis11);
+		document.write("<br>Total Bill with Discount = "+total);
+
+
+		document.write("<br><br>");
+		document.write("Example-3");
+		document.write("<br>");
+
+		var a=23;
+		//document.write(typeof a);
+
+		if(typeof a=="number")
+		{
+			document.write(a+" is of type number");
+		}
+		else if(typeof a=="string")
+		{
+			document.write(a+" is of type string");
+		}
+		else if(typeof a=="boolean")
+		{
+			document.write(a+" is of type Boolean");
+		}
+		else if(typeof a=="object")
+		{
+			document.write("a is of type Object");
+		}
+		else
+		{
+			document.write("a is of type undefined");
+		}
+
+
+		document.write("<br><br><br><br>");
+
+		document.write("<h2>*********SWITCH CASE********</h2>");
+		document.write("<br>Example-1");
+		document.write("<br>");
+
+		var a = 20;
+		var b = 10;
+		var op = "+";
+
+		switch(op)
+		{
+			case '+':
+					var c = a+b;
+					document.write(c);
+					break;
+			case '-':
+					var c = a-b;
+					document.write(c);
+					break;
+			case '*':
+					var c = a*b;
+					document.write(c);
+					break;
+			case '/':
+					var c = a/b;
+					document.write(c);
+					break;
+			case '%':
+					var c = a%b;
+					document.write(c);
+					break;
+			default:
+					document.write("Invalid choice");
+		}
+
+
+		document.write("<br><br>Example-2");
+		document.write("<br>");
+
+		var col = "v";
+
+		switch(col)
+		{
+			case 'r':
+					document.write("Red Color");
+					document.getElementById('body').style="background:red";
+					break;
+			case 'o':
+					document.write("orange Color");
+					document.getElementById('body').style="background:orange";
+					break;
+			case 'y':
+					document.write("yellow Color");
+					document.getElementById('body').style="background:yellow";
+					break;
+			case 'g':
+					document.write("green Color");
+					document.getElementById('body').style="background:green";
+					break;
+			case 'b':
+					document.write("blue Color");
+					document.getElementById('body').style="background:blue";
+					break;
+			case 'i':
+					document.write("Indigo Color");
+					document.getElementById('body').style="background:Indigo";
+					break;
+			case 'v':
+					document.write("Violet Color");
+					document.getElementById('body').style="background:Violet";
+					break;
+			default:
+					document.write("Invalid Choice");
+		}
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+

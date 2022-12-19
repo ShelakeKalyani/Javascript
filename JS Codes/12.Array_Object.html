@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array-Object</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+//*************************object********************
+		// var stu = {
+		// 	"stud1":{"name":"Kalyani","mobile":9876345267},
+		// 	"stud2":{"name":"Kalyani","mobile":9876345267},
+		// 	"stud3":{"name":"Kalyani","mobile":9876345267},
+		// 	"stud4":{"name":"Kalyani","mobile":9876345267},
+		// 	"stud5":{"name":"Kalyani","mobile":9876345267},
+		// }
+		// document.write(stu.stud1.name);
+
+//***************************array***********************
+		var stu = [
+			['Kalyani',98125475859],
+			['Kalyani',98125475859],
+			['Kalyani',98125475859],
+			['Kalyani',98125475859],
+			['Kalyani',98125475859],
+			['Kalyani',98125475859],
+		]
+		document.write(stu[0][0]);
+
+
+		document.write("<h1>*******************Array And Object****************</h1>");
+		var stud = [
+			{"name":"Kalyani","mobile":9876345267},
+			{"name":"Kalyani","mobile":9876345267},
+			{"name":"Kallu","mobile":9876345267},
+			{"name":"Kalyani","mobile":9876345267},
+			{"name":"Kalyani","mobile":9876345267},
+		]
+		console.log(stud);
+		document.write(stud[2].name);
+		document.write("<br>"+stud[2]['name']);
+	</script>
+
+</body>
+</html>

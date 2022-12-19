@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+
+
+document.write("<h2>***************Literal Object*******************</h2>");
+		var obj = {"Name":"Kalyani","Address":"Nagar","Age":20};
+		document.write(obj);
+		console.log(obj);
+
+		//print
+		document.write("<br>"+obj.Name);
+		document.write("<br>"+obj.Address);
+		document.write("<br>"+obj.Age);
+
+
+
+
+
+document.write("<h2>***************Contructor Object*******************</h2>");
+		var abc = new Object();
+		abc.Name = "Kalyani";
+		abc.Address = "Ahmednagar";
+		abc.Age = 20;
+		abc.Email = "asdf@gmail.com";
+
+		console.log(abc);
+
+		//print
+		document.write("<br>"+abc.Name);
+		document.write("<br>"+abc.Address);
+		document.write("<br>"+abc.Age);
+		document.write("<br>"+abc.Email);
+
+		abc.Email = "j52dfj@gmail.com";			//Update
+		document.write("<br><br>"+abc.Email);
+
+		console.log(abc);
+
+
+document.write("<br><h2>***************Object in Method*******************</h2>");
+		var a={
+			"fname" : "Kalyani",
+			"lname" : "Shelake",
+			"Name"  : function(){
+				return this.fname+" "+this.lname;
+			} 	
+		}
+
+		//print
+		document.write("<br>"+a.fname);
+		document.write("<br>"+a.lname);
+		document.write("<br>"+a.Name());
+
+document.write("<br><h2>***************For in Loop*******************</h2>");
+		var data1={
+			"name":"Kalyani",
+			"email":"djjhh@gmail.com",
+			"Mobile":8766151738,
+		}
+		for(var key in data1){
+			document.write("<br>"+key+" : "+data1[key]);
+			// document.write(":"+data1[key]);
+		}
+
+
+document.write("<br><h2>***************Nested Object*******************</h2>");
+		
+		var data={
+			"name":"Kalyani",
+			"email":"kajjj@gmail.com",
+			"subject":{
+				"sub1":"HTML",
+				"sub2":"CSS",
+				"sub3":"JS",
+			},
+			"address":"Nagar",
+		}
+
+		document.write(data.subject.sub1);
+		
+		for(var key in data.subject){
+			document.write("<br>"+key);
+			document.write(":"+data.subject[key]);
+		}
+	</script>
+
+</body>
+</html>
+
+
+
+<!-- HW :-
+object --- delete key
+function example  --- -->

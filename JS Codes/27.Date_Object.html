@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Date Object</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var d = new Date();
+		document.write(d);
+
+		//date (It give month value by using array index concept)
+		document.write("<br>"+d.getDate()+"-"+Number(d.getMonth()+1)+"-"+d.getFullYear());
+
+		//day (It give Day value by using array index concept)
+		document.write("<br>"+d.getDay());
+
+		//time
+		document.write("<br>"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+":"+d.getMilliseconds());
+
+
+		//set
+		d.setDate(25);
+		d.setMonth(10);
+		document.write("<br><br>"+d);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>innerText and innerHTML</title>
+</head>
+<body>
+
+	<h1 id="data"><mark>Welcome</mark></h1>
+	<h1 id="data1">JS</h1>
+
+
+	<h1 id="da"><mark>Welcome</mark></h1>
+	<h1 id="da1">JS</h1>
+
+	<script type="text/javascript">
+		//innerText
+		var a = document.getElementById('data').innerText;
+		console.log(a);
+		document.getElementById('data1').innerText = "<mark>Hello</mark>";
+
+
+		//innerHTML
+		var b = document.getElementById('da').innerHTML;
+		console.log(b);
+		document.getElementById('da1').innerHTML = "<mark>Hello</mark>";
+
+	</script>
+
+</body>
+</html>

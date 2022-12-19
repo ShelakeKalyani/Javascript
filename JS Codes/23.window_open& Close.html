@@ -1,0 +1,34 @@
+<!-- 25-11-2022 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<button onclick="open1()">Open</button>
+	<button onclick="close1()">Close</button>
+
+	<script type="text/javascript">
+
+		var win = " ";
+
+		function open1()
+		{
+			//window.open();							//new tab open
+			// window.open('http://a2zithub.org/training/');
+			win = window.open('http://a2zithub.org/training/',"_blank_","height=500px,width=300px");    //direct new window , we cannot open new tab(no option) like exam link
+		}
+
+		function close1()
+		{
+			//window.close();			//whole browser close
+			win.close();				//ji window open keli ti close kra
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event</title>
+
+	<style type="text/css">
+		.box{
+			height: 500px;
+			width: 100%;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box" onclick="fun()" ondblclick="fun2()" oncontextmenu="fun3()" onmouseover="Mouseover()" onmouseout="Mouseout()">
+		<center>
+			<h2>****************Mouse Event**************</h2>
+			<h4>1.Single Click : Cyan Color</h4>
+			<h4>2.Double Click : Yellow Color</h4>
+			<h4>3.Context Click(Right Click) : Violet Color</h4>
+			<h4>4.Onmouseover (when mouse come) : blue Color</h4>
+			<h4>5.Onmouseout (when mouse out) : Yellow Color</h4>
+			<h4>6.Onmouseenter : </h4>
+			<h4>7.Onmouseleave : </h4>
+		</center>
+	</div>
+
+
+
+	<script type="text/javascript">
+
+
+// document.write("<h2>****************Mouse Event - 1.Click**************</h2>")
+
+		function fun()
+		{
+			document.getElementById('box').style.background="cyan";
+		}
+
+
+
+// document.write("<h2>****************Mouse Event - 2.Double Click**************</h2>")
+		function fun2()
+		{
+			document.getElementById('box').style.background="yellow";
+		}
+
+
+
+// document.write("<h2>****************Mouse Event - 3.Context Click**************</h2>")
+		function fun3()
+		{
+			document.getElementById('box').style.background="Violet";
+		}
+
+
+
+// document.write("<h2>****************Mouse Event - 4.onmouseover**************</h2>")
+		function Mouseover()
+		{
+			document.getElementById('box').style.background="blue";
+		}
+
+
+
+// document.write("<h2>****************Mouse Event - 5.onmouseout**************</h2>")
+		function Mouseout()
+		{
+			document.getElementById('box').style.background="pink";
+		}
+
+
+
+	</script>
+
+</body>
+</html>
